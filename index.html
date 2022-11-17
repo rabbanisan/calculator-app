@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Calculator</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="display">
+				<input class="input-txt" type="text" id="displayBox" />
+				<input class="button" type="button" value="C" onclick="clearBox()" />
+			</div>
+			<div class="buttons">
+				<div class="btn-container">
+					<input
+						class="button-number"
+						type="button"
+						value="7"
+						onclick="input('7')"
+					/>
+					<input
+						class="button-number"
+						type="button"
+						value="8"
+						onclick="input('8')"
+					/>
+					<input
+						class="button-number"
+						type="button"
+						value="9"
+						onclick="input('9')"
+					/>
+					<input
+						class="button-operator"
+						type="button"
+						value="/"
+						onclick="input('/')"
+					/>
+				</div>
+
+				<div class="btn-container">
+					<input
+						class="button-number"
+						type="button"
+						value="4"
+						onclick="input('4')"
+					/>
+					<input
+						class="button-number"
+						type="button"
+						value="5"
+						onclick="input('5')"
+					/>
+					<input
+						class="button-number"
+						type="button"
+						value="6"
+						onclick="input('6')"
+					/>
+					<input
+						class="button-operator"
+						type="button"
+						value="*"
+						onclick="input('*')"
+					/>
+				</div>
+				<div class="btn-container">
+					<input
+						class="button-number"
+						type="button"
+						value="1"
+						onclick="input('1')"
+					/>
+					<input
+						class="button-number"
+						type="button"
+						value="2"
+						onclick="input('2')"
+					/>
+					<input
+						class="button-number"
+						type="button"
+						value="3"
+						onclick="input('3')"
+					/>
+					<input
+						class="button-operator"
+						type="button"
+						value="-"
+						onclick="input('-')"
+					/>
+				</div>
+
+				<div class="btn-container">
+					<input
+						class="button-number"
+						type="button"
+						value="0"
+						onclick="input('0')"
+					/>
+					<input class="button" type="button" value="." onclick="input('.')" />
+					<input class="button" type="button" value="=" onclick="result()" />
+					<input
+						class="button-operator"
+						type="button"
+						value="+"
+						onclick="input('+')"
+					/>
+				</div>
+			</div>
+		</div>
+		<!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  --></body>
+</html>
